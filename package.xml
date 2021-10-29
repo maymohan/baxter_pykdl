@@ -27,7 +27,10 @@
   <build_depend>geometry_msgs</build_depend>
   <build_depend>sensor_msgs</build_depend>
   <build_depend>liburdfdom-dev</build_depend>
-  <build_depend>python_orocos_kdl</build_depend>
+  <!-- <build_depend>python_orocos_kdl</build_depend> -->
+  <build_depend>python3-pykdl</build_depend>
+  <build_depend>liborocos-kdl-dev</build_depend>
+  <build_depend>liborocos-kdl</build_depend>
   <build_depend>tf</build_depend>
 
   <run_depend>rospy</run_depend>
@@ -36,7 +39,10 @@
   <run_depend>geometry_msgs</run_depend>
   <run_depend>sensor_msgs</run_depend>
   <run_depend>urdfdom</run_depend>
-  <run_depend>python_orocos_kdl</run_depend>
+  <!-- <run_depend>python_orocos_kdl</run_depend> -->
+  <run_depend>python3-pykdl</run_depend>
+  <run_depend>liborocos-kdl-dev</run_depend>
+  <run_depend>liborocos-kdl</run_depend>
   <run_depend>tf</run_depend>
 
 </package>

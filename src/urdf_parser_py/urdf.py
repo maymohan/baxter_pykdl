@@ -205,7 +205,7 @@ xmlr.reflect(Inertia, params = [xmlr.Attribute(key, float) for key in Inertia.KE
 
 class Gravity(xmlr.Object):
 	def __init__(self):
-            pass
+			pass
 
 xmlr.reflect(Gravity, params = [
 	])
@@ -326,7 +326,7 @@ class Link(xmlr.Object):
 		self.inertial = inertial
 		self.collision = collision
 		self.origin = origin
-                self.gravity = gravity
+		self.gravity = gravity
 
 xmlr.reflect(Link, params = [
 	name_attribute,

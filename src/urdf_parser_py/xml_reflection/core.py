@@ -1,6 +1,7 @@
 from urdf_parser_py.xml_reflection.basics import *
 import sys
 import copy
+import xml.etree
 
 # @todo Get rid of "import *"
 # @todo Make this work with decorators
@@ -211,7 +212,7 @@ class DuckTypedFactory(ValueType):
 		for value_type in self.type_order:
 			try:
 				return value_type.from_xml(node)
-			except Exception, e:
+			except(Exception) as e:
 				error_set.append((value_type, e))
 		# Should have returned, we encountered errors
 		out = "Could not perform duck-typed parsing."

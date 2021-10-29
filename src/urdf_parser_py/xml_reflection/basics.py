@@ -38,10 +38,7 @@ def xml_children(node):
     return list(filter(predicate, children))
 
 def isstring(obj):
-    try:
-        return isinstance(obj, basestring)
-    except NameError:
-        return isinstance(obj, str)
+    return isinstance(obj, str)
 
 def to_yaml(obj):
     """ Simplify yaml representation for pretty printing """
