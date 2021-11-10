@@ -20,12 +20,30 @@ This is a ROS Noetic/Python3 compatible fork of the baxter_pykdl package. ROS No
 
 Installation Instructions
 -------------------------
-Install lxml
+System Requirements:
+- OS: Ubuntu 20.04
+- ROS:Noetic Ninjemys
+- Python version: 3.8
+
+These instructions assume you have followed the SDK installation procedure available on `this page <https://github.com/maymohan/baxter/wiki/Installation-Instructions>`__.
+
+- Install dependencies
 ::
     
-sudo apt install ros-noetic-urdf-parser-plugin ros-noetic-urdfdom-py python3-lxml
+sudo apt install ros-noetic-kdl-conversions  ros-noetic-urdf-parser-plugin ros-noetic-urdfdom-py python3-lxml
 
-Details of the original repositories are below.
+- Change directory to folder with your baxter backages
+::
+    
+cd ~/ros_ws/src/baxter
+
+- Clone and build package
+::
+    
+git clone https://github.com/maymohan/baxter_pykdl.git
+cd ~/ros_ws/
+catkin_make
+
 
 Baxter PyKDL
 ------------
